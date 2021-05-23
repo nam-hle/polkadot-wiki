@@ -76,17 +76,18 @@
   };
 })("docReady", window);
 
-docReady(() =>
+docReady(function () {
   setTimeout(function () {
     // Custom logic goes here
 
-    AOS.init();
+    // Insert "Improve this wiki ribbon": Done in docusaurus.config.js
 
     // Add fathom to footer
-
     let script = document.createElement("script");
-    script.setAttribute("src", "https://mammal.polkadot.network/script.js");
-    script.setAttribute("site", "YOUKYIQA");
-    document.querySelector("body footer").appendChild(script);
-  }, 1000)
-);
+    script.setAttribute("src", "https://lion.kusama.network/script.js");
+    script.setAttribute("site", "PNZSQVUV");
+    document.querySelector("#footer").appendChild(script);
+
+    // Force edit button to go to non-mirror page: Done in docusaurus.config.js
+  }, 1000);
+});
