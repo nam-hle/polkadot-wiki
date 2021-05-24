@@ -19,8 +19,6 @@
     url("../fonts/SpaceMono-Regular.ttf") format("woff"),
     url("../fonts/SpaceMono-Regular.ttf") format("truetype"),
     url("../fonts/SpaceMono-Regular.ttf") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 
 .homepage-font {
@@ -37,10 +35,6 @@
   background: var(--ifm-color-primary);
   z-index: 999;
   left: 1rem;
-}
-
-* {
-  outline: 1px solid red !important
 }
 
 @media only screen and (max-width: 750px) {
@@ -435,6 +429,11 @@ article img {
   display: inline-block;
   line-height: 1.5;
   cursor: pointer;
+}
+
+.kusama-mainpage-build-btn:hover {
+  color: #00ffe1;
+  border-color: #00ffe1;
 }
 
 .navbar__brand:hover {
