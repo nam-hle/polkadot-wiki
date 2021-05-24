@@ -36,6 +36,13 @@
 #back-to-top {
   background: var(--ifm-color-primary);
   z-index: 999;
+  left: 1rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .DocSearch.DocSearch-Button {
+    width: 36px;
+  }
 }
 
 .menu--responsive .menu__button {
